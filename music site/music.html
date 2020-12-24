@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music</title>
+	<meta charset="UTF=8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+           box-sizing: border-box;
+           overflow-x: hidden;
+
+		}
+		.header{
+			text-align: center;
+			color:white;
+			position:relative;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+
+		}
+	.audio{
+			margin-top: 15px;
+		}
+
+		.header h1{
+			margin-bottom: 30px;
+		}
+		.header h1:hover{
+			color:lightgreen;
+		}
+		h2:hover{
+			color:lightgreen;
+			
+		}
+		
+
+       .img{
+            	background-image: url(https://images.pexels.com/photos/1916824/pexels-photo-1916824.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            	
+            	background-position: center;
+            	resize: both;
+            	background-size: cover;
+            	background-repeat: no-repeat;
+            	height: 500px;
+            	width:100%;
+         }
+         .menu-right{
+         	text-align:left;
+         }
+
+       
+         .menu ul{
+         	background:grey;
+         	list-style: none;
+         }
+           .menu ul li{
+           	color: white;
+          	display: inline-block;
+          	margin-left: 60px;	
+          	padding: 10px;
+          	color:black;
+           }
+   .menu ul li a{
+           	text-decoration: none;
+           }
+           .menu ul li:hover{
+           	background-color: #ff3456;
+           	border-radius: 10px;
+           }
+           .gallery{
+           	margin:10px;
+           	display: flex;
+           	flex-wrap: wrap;
+           	flex-basis: 10px;
+           	justify-content: space-between;
+           	align-items: center; 
+           	position: relative;
+           	object-fit: contain;
+           }
+           .gallery img{
+              justify-content: center;
+           }
+           span{
+           	margin:0 20px;
+           	font-size: 28px;
+           	cursor:pointer;
+           	display:none;
+           }
+           @media only screen and (max-width:670px){
+           	span{
+           		display:block;
+           		background: lightgreen;
+           		margin:none;
+           		padding:none;
+
+           	}
+           	.menu ul li{
+           		display:block;
+           		text-align: center;
+           	}
+           	ul{
+           		display:none;
+           	}
+           } 
+            @media only screen and (max-width:768px){
+           	span{
+           		display:block;
+           		background: lightgreen;
+           		margin:none;
+           		padding:none;
+
+           	}
+           	.menu ul li{
+           		display:block;
+           		text-align: center;
+           	}
+           	ul{
+           		display:none;
+           	}
+            
+           } 
+           
+           
+
+   </style>
+</head>
+<body>
+  <div class="menu">
+  <div class="menu-right">
+    
+    <span onclick="myFunction()">&#9776;</span>
+  <ul id="menu">
+    <li class="active"><a href="#">HOME</a>
+    </li>
+    <li><a href="#i9">CATEGORIES</a></li>
+    <li><a href="https://gaana.com/newrelease/hindi">RHYTHM</a></li>
+    <li><a href="https://www.bensound.com/">ABOUT US</a></li>
+  </ul> 
+</div>
+ </div>
+	 <div class="img">
+ <div class="header">
+ 	<h1>We Can't Live On Without Rhythm</h1>
+ 	<h1>THERE IS SUBTLE DIFFERENCE BETWEEN MUSIC AND NOISE</h1>
+ 	
+ <CENTER><H2>WE SPREAD REMEDIES</H2></CENTER>
+ <audio class="audio" controls autoplay loop>
+ 	<source src="music.mp3" type="audio/mp3">
+ 	</audio>
+ </div>
+ </div>
+ 
+ <div class="gallery">
+  <div id="i1">
+    <img src="https://cdn.pixabay.com/photo/2015/11/07/11/24/musician-1031110__340.jpg">
+  </div>
+    <div class="i2">
+    <img src="https://cdn.pixabay.com/photo/2017/04/10/16/55/live-music-2219036__340.jpg">
+  </div>
+    <div class="i3">
+    <img src="https://cdn.pixabay.com/photo/2012/04/13/00/39/drums-31362__340.png">
+  </div>
+    <div class="i4">
+    <img src="https://cdn.pixabay.com/photo/2016/11/19/00/12/wave-1837426__340.png">
+  </div>
+    <div class="i5">
+    <img src="https://media.istockphoto.com/photos/music-abstract-background-blue-equalizer-for-music-showing-sound-picture-id1153898634?b=1&k=6&m=1153898634&s=170667a&w=0&h=gQWrlJMsRHFfeo43XywaDn_x7VKv1AQVceLzhxVU8vY=">
+  </div>
+  <div class="i6">
+    <img src="https://cdn.pixabay.com/photo/2016/04/09/11/18/brush-1317900__340.jpg">
+  </div>
+    <div class="i7">
+    <img src="https://cdn.pixabay.com/photo/2016/06/06/09/57/clef-1439137__340.jpg">
+  </div>
+    <div class="i8">
+    <img src="https://cdn.pixabay.com/photo/2014/01/31/11/56/equalizer-255396__340.jpg">
+  </div>
+    <div id="i9">
+    <img src="https://cdn.pixabay.com/photo/2013/07/13/11/51/cd-158817__340.png">
+  </div>
+</div>
+
+<script type="text/javascript">
+	function myFunction(){
+		var x=document.getElementById("menu");
+		if(x.style.display=="block"){
+			x.style.display="none";
+		}
+		else{
+			x.style.display="block";
+		}
+		
+	}
+</script>
+
+
+
+</body>
+</html>

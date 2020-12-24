@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation bar</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		ul{
+			list-style: none;
+		
+		}
+		 li a{
+		 		text-decoration: none;
+		 		display: block;
+		 		width:80px;
+		 	    background-color: #ff4600;
+		 	    border-bottom: 1px solid black;
+		}
+	   .active{
+	   	background-color: grey;
+	   	color:white;
+	   }
+		li a:hover:not(.active){
+          	background-color: grey;
+			color:white;
+		}
+		li{
+			text-align: center;
+		}
+		ul{
+			position: fixed;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">services</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+    
+</body>
+</html>
